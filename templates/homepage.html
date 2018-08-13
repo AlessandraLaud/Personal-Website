@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+{% block stylesheets %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}" />
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+{% endblock %}
+{% block content %}
+<div id="cover">
+    <div id="cover-background" class="uk-background-cover uk-background-bottom-center"></div>
+    <div id="cover-photo-container" class="uk-card uk-card-default uk-card-body">
+        <img id="cover-photo" src="{{ url_for('static', filename='images/profile_photo.jpg') }}" />
+    </div>
+</div>
+<div id="about-me" class="uk-container container-spacing">
+    <h1 class="uk-text-center">About Me</h1>
+    <p class="text">
+        Hello! My name is Alessandra Laudando, and I am currently a student attaining 
+        a Bachelor's degree in Computer Science at the University of Illinois at Chicago. 
+        My interests include software engineering, frontend web development, and backend 
+        web development. I am currently seeking a a full time position that will allow me to 
+        improve and apply my technical skills.
+    </p>
+</div>
+<div id="resume" style="background-color: #E2EFF9;" class="container-spacing"> 
+    <div class="uk-container uk-container-small">
+        <h1 class="uk-text-center">Resume</h1>
+        <div id="education" class="section-spacing">
+            <h2>Education</h2>
+            <div class="education-section">
+                <div class="uk-flex">
+                    <div class="uk-visible@m logo-container fade-image">
+                        <a href="https://www.cs.uic.edu/" target="_blank">
+                            <img class="logo" src="{{ url_for('static', filename='images/uic_logo.png') }}">
+                        </a>
+                    </div>
+                    <div class="uk-flex uk-flex-middle section-title">
+                        University of Illinois at Chicago
+                        <br>
+                        Computer Science, B.S
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-visible@m date-container">
+                        2015 - 2019
+                        <br>
+                        Chicago, IL
+                    </div>
+                </div>
+                <div class="text section-details-container">
+                    <p class="text section-details-title">Relevant Coursework:</p>
+                    <ul class="resume-list">
+                        <li>Fundamentals of Computer Science</li>
+                        <li>Data Structures</li>
+                        <li>Intro to Software Development Tools and Practices</li>
+                        <li>Languages and Automata</li>
+                        <li>Software Design</li>
+                    </ul>
+                    <div class="badges">
+                        <span class="uk-badge badges-color">C</span>
+                        <span class="uk-badge badges-color">C++</span>
+                        <span class="uk-badge badges-color">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experience" class="section-spacing">
+            <h2>Experience</h2>
+            <div class="experience-section">
+                <div class="uk-flex">
+                    <div class="uk-visible@m logo-container fade-image">
+                        <a href="https://www.vorne.com/" target="_blank">
+                            <img class="logo" src="{{ url_for('static', filename='images/vorne_logo.png') }}">
+                        </a>
+                    </div>
+                    <div class="uk-flex uk-flex-middle section-title">
+                        Vorne Industries
+                        <br>
+                        Software Engineer Intern
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-visible@m date-container">
+                        Summer 2017
+                        <br>
+                        Chicago, IL
+                    </div>
+                </div>
+                <div class="text section-details-container">
+                    <ul class="resume-list">
+                        <li>Joined a team of software engineers to extend an existing company api.</li>
+                        <li>Developed software to display data on embedded devices.</li>
+                        <li>Wrote and executed Unit tests on embdedded devices.</li>
+                    </ul>
+                    <div class="badges">
+                        <span class="uk-badge badges-color">C++</span>
+                        <span class="uk-badge badges-color">JavaScript</span>
+                    </div>
+                </div>
+                <div class="uk-flex" style="margin-top: 35px;">
+                    <div class="uk-visible@m logo-container fade-image">
+                        <a href="https://www.cdkglobal.com/" target="_blank">
+                            <img class="logo" src="{{ url_for('static', filename='images/CDK_Logo.png') }}">
+                        </a>
+                    </div>
+                    <div class="uk-flex uk-flex-middle section-title">
+                        CDK Global
+                        <br>
+                        Software Engineer Intern
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-visible@m date-container">
+                        Summer 2018
+                        <br>
+                        Chicago, IL
+                    </div>
+                </div>
+                <div class="text section-details-container">
+                    <ul class="resume-list">
+                        <li>
+                            Joined the Inventory team to help build a mobile app that will provide dealerships with an easier way to
+                            purchase, buy, and sell cars
+                        </li>
+                        <li>​Used Agile practices and TDD to produce reliable software</li>
+                        <li>Wrote and executed Unit tests for each new mobile feature</li>
+                        <li>Hackathon: Designed and developed a web application that allowed Dealers to trade cars</li>
+                    </ul>
+                    <div class="badges">
+                        <span class="uk-badge badges-color">JavaScript</span>
+                        <span class="uk-badge badges-color">React</span>
+                        <span class="uk-badge badges-color">Redux</span>
+                        <span class="uk-badge badges-color">Material UI</span>
+                        <span class="uk-badge badges-color">Jest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="involvement" class="uk-container container-spacing">
+    <h1 class="uk-text-center">Involvement</h1>
+    <div class="involvement-section">
+        <div class="uk-flex uk-flex-column uk-grid-small" uk-grid>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container fade-image">
+                    <a href="https://girlswhocode.com/" target="_blank">
+                        <img src="../static/images/GWC.jpg" style="padding: 20px;" uk-cover>
+                        <canvas width="600" height="350"></canvas>
+                    </a>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title uk-text-center">Girls Who Code</h3>
+                        <ul>
+                            <li class="involvement-list">GWC is a nonprofit organization that encourages all women to pursue Computer Science</li>
+                            <li class="involvement-list">I am a teacher's assistent for the intermediate class: beginner web development</li>
+                        </ul>
+                        <div class="involvement-badges">
+                            <span class="uk-badge badges-color">HTML</span>
+                            <span class="uk-badge badges-color">CSS</span>
+                            <span class="uk-badge badges-color">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container fade-image">
+                    <a href="https://acm.cs.uic.edu/" target="_blank">
+                        <img src="../static/images/ACM.png" style="padding: 20px;" uk-cover>
+                        <canvas width="600" height="350"></canvas>
+                    </a>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title uk-text-center">Association of Computing and Machinery</h3>
+                        <ul>
+                            <li class="involvement-list">ACM is an organization that brings individuals in the field of computing together to share knowledge and resources</li>
+                            <li class="involvement-list">As a member of the ACM webteam, I help maintain UIC's ACM website. </li>
+                        </ul>
+                        <div class="involvement-badges">
+                            <span class="uk-badge badges-color">Flask</span>
+                            <span class="uk-badge badges-color">Python</span>
+                            <span class="uk-badge badges-color">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container fade-image">
+                    <a href="http://wics.cs.uic.edu/" target="_blank">
+                        <img src="../static/images/WICS.png" uk-cover>
+                        <canvas width="600" height="350"></canvas>
+                    </a>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title uk-text-center">Women In Computer Science</h3>
+                        <ul>
+                            <li class="involvement-list">WICS is a student organization with a mission to empower and inspire other women to pursue a career in CS.</li>
+                            <li class="involvement-list">As a member of WICS, I strive to reach out to other women in CS at UIC in order to make them feel more welcomed and comfortable.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

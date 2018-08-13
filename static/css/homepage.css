@@ -1,0 +1,135 @@
+#cover-background {
+    background-color: #143B5C;
+    height: 250px;
+}
+
+#cover-photo-container {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: calc(-250px / 2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(-250px / 2);
+    padding: 10px;
+}
+
+.container-spacing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-spacing {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.section-title {
+    flex-grow: 1; 
+    font-size: 22px; 
+    color: black;
+}
+
+.section-details-title {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 18px;
+    color: #666;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.logo-container {
+    margin-right: 50px;
+}
+
+.resume-container {
+    background-color: rgb(88, 88, 88);
+}
+
+.resume-list {
+    margin-bottom: 0px;
+    width: 600px
+}
+
+.education-section-title {
+    flex-grow: 1; 
+    font-size: 22px; 
+    color: white;
+}
+
+.date-container {
+    color: black; 
+    font-size: 18px;
+}
+
+.contact-container {
+    background-color: #143B5C; 
+    color: white;
+}
+
+.badges {
+    margin-left: 10px;
+}
+
+.badges-color {
+    background-color: #154166; 
+}
+
+.involvement-badges {
+    margin-left: 25px;
+}
+
+.involvement-list {
+    margin: 10px;
+}
+
+.contact-text {
+    font-size: 15px;
+}
+
+.fa-github-square:hover {
+    color: #2BB74B;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5
+}
+
+.fade-image {
+    opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade-image:hover {
+    opacity: 0.5;
+}
+
+@media(min-width: 960px) {
+    .section-details-container {
+        margin-left: 120px; 
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #cover-background {
+        background-color: none;
+        background-image: url('../images/cover.jpg');
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    #contact-social-icons {
+        margin: 40px 0px 0px 0px; 
+    }
+}
