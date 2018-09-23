@@ -2,6 +2,7 @@
 {% block stylesheets %}
 {{ super() }}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}" />
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Petit+Formal+Script" rel="stylesheet">
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 {% endblock %}
 {% block content %}
@@ -12,13 +13,19 @@
     </div>
 </div>
 <div id="about-me" class="uk-container container-spacing">
-    <h1 class="uk-text-center">About Me</h1>
-    <p class="text">
-        Hello! My name is Alessandra Laudando, and I am currently a student attaining 
-        a Bachelor's degree in Computer Science at the University of Illinois at Chicago. 
-        My interests include software engineering, frontend web development, and backend 
-        web development. I am currently seeking a a full time position that will allow me to 
-        improve and apply my technical skills.
+    <h1 class="uk-text-center">Who I Am...</h1>
+    <h2 class="uk-text-center">Patient • Determined • Organized <br>
+        <span class="text">Computer Science: University of Illinois at Chicago</span>
+    <h2> 
+    <ul class="text uk-text-center" style="list-style-type:None">
+  
+        <li>Full-stack web development</li>
+        <li>Seeking a a full-time position</li>
+        <li><i>Girls Who Code</i> Teachers Assistant</li>
+        <li>Empowering women in Computer Science</li>
+    </ul>
+    <p class="text uk-text-center" style="padding-top: 40px">Thanks for visiting,<br>
+        <span class="name-text" style="font-family: 'Oleo Script Swash Caps', cursive; font-size: 23px;">Alessandra</span>
     </p>
 </div>
 <div id="resume" style="background-color: #E2EFF9;" class="container-spacing"> 
